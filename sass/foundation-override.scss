@@ -1,0 +1,509 @@
+body {
+	background: #153A54;
+}
+
+@mixin modal {
+
+	ul {
+		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	}
+
+	table {
+		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+		font-size: 130%;
+		margin-top: 2em;
+		width: 100%;
+	}
+
+	th {
+		font-size: 90%;
+	}
+
+	li {
+		margin-left: 2em;
+		font-size: 110%;
+		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	}
+
+}
+
+@mixin numberCircle {
+
+	.numberCircle {
+		-webkit-border-radius: 999px;
+	    -moz-border-radius: 999px;
+	    border-radius: 999px; 
+	    behavior: url(PIE.htc); 
+	    
+	    text-align: center;
+	    
+	    font-family: 'Francois One', sans-serif;
+		font-weight: bold;
+		font-size: 300%;
+	}
+
+}
+
+@mixin numberCircleLife {
+
+	.numberCircle {
+		-webkit-border-radius: 999px;
+	    -moz-border-radius: 999px;
+	    border-radius: 999px; 
+	    behavior: url(PIE.htc); 
+
+	    width: 168px;
+	    height: 168px;
+	    line-height: 115px;
+	    background: #18557f;
+	    color: #ffffff;
+	    
+	    text-align: center;
+	    
+	    font-family: 'Francois One', sans-serif;
+		font-weight: bold;
+		font-size: 300%;
+		margin-top: 0.3em;
+		margin-left: 0.3em;
+	}
+
+}
+
+@mixin moreInfo($color) {
+	
+	.more-info a {
+		color: $color;
+		font-family: 'Francois One', sans-serif;
+		font-size: 70%;
+		margin-top: 0.3em;
+	}
+
+}
+
+@mixin quicklinks{
+	
+	ul {
+		margin-top: 1.5em;
+	}
+
+	.no-bullet li{
+		margin-top: 0.5em;
+	}
+
+
+} 
+
+@mixin navbar {
+	
+	height: 75px;
+	background: #0B1F36;
+	margin-bottom: 0em;
+
+	.logo img {
+		padding-top: 0.7em;
+	}
+
+	p {
+		color: #ffffff;
+		padding-top: 1.4em;
+		font: 18px/27px 'ColaborateThinRegular', Arial, sans-serif;
+	}
+
+	form {
+		font: 18px/27px 'ColaboratediumRegular', Arial, sans-serif;
+	}
+
+	.nav-dropdown {
+		padding-top: 1.05em;
+	}
+
+}
+
+@mixin lifeCareerModal {
+
+	 .description {
+		font-size: 40%;
+		margin-top: -1.8em;
+		line-height: 100%;
+	}
+	
+	.lifeCareer-points {
+		margin-top: 2em;
+		font-size: 110%;
+		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	}
+
+	.lifeCareer-points p {
+		margin-bottom: -0.9em;
+		font-size: 130%;
+		font-family: 'ColaborateBoldRegular', Arial, sans-serif;
+	}
+
+	.lifeCareer-points li {
+		margin-left: 1.3em;
+	}	
+
+}
+
+@mixin flyFishingModal {
+
+	table {
+		margin-top: 2em;
+		width: 100%;
+	}
+	
+	ul {
+		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	}
+	
+	table {
+		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+		font-size: 130%;
+	}
+
+	th {
+		font-size: 90%;
+	}
+
+	.flyfishing-points {
+		margin-top: 2em;
+		font-size: 110%;
+		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	}
+
+	.flyfishing-points p {
+		margin-bottom: -0.9em;
+		font-size: 130%;
+		font-family: 'ColaborateBoldRegular', Arial, sans-serif;
+	}
+
+	.flyfishing-points li {
+		margin-left: 1.3em;
+	}
+
+	ul {
+		margin-bottom: 1em;
+	}
+	
+}
+
+.top-bar {
+	@include navbar;
+}
+
+#dash-subheader {
+	background: #18557F;
+	font-family: 'Francois One', sans-serif;
+}
+
+#program-name {
+	color: #ffffff;
+	font-size: 180%;
+	padding-top: 0.7em;
+	padding-bottom: 0.5em;
+}
+
+#student-search {
+	padding-top: 1em;
+	font: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
+}
+
+
+#demographics {
+	background: #E9E9E9;
+	height: 900px;	
+	@include moreInfo(#323232);
+}
+
+#content-area {
+	background: #F0A350;
+	height: 900px;
+	@include moreInfo(#ffffff);	
+}
+
+#content-learnt {
+	@include numberCircle;
+}
+
+.main-header {
+	font-family: 'Francois One', sans-serif;
+	background-color: #18557F;
+	color: #ffffff;
+	font-size: 180%;
+	padding-left: 0.5em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	margin-top: -1.5em;
+	margin-left: 0.5em;
+	z-index: 1;
+	width: 80%
+	;
+}
+
+.main-header-group {
+	margin-top: 2em;
+}
+
+.main-header-group hr {
+	border: solid #F0A350;
+	border-width: 5px 0 0;
+	/*margin: 2em -0.4em 1.1875em;*/
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content-area .main-header-group hr {
+	border: solid #F2BD84;
+	border-width: 0.32em 0 0;
+}
+
+#basic-stats tr th {
+	padding: 0em 0.625em;
+}
+
+#basic-stats {
+	margin-top: 1em;
+	border: none;
+	background: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+#table-stats {
+	color: #153A54;
+	font-size: 200%;
+	font-family: 'Francois One', sans-serif;
+	background-color: #E9E9E9;
+	border-bottom: none;
+}
+
+#table-stats-description {
+	color: #153A54;
+	font: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
+	background-color: #E9E9E9;
+}
+
+.sub-header {
+	color: #153A54;
+	font-family: 'Francois One', sans-serif;
+	font-size: 130%;
+	letter-spacing:1px;
+}
+
+ #demographics .sub-header-section hr {
+	border: solid #F0A350;
+	border-width: 2px 0 0;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -0.5em;
+	margin-bottom: 0.5em;
+}
+
+#genderbar {
+	margin-bottom: 0.5em;
+}
+
+#racepie rect {
+	fill: #E9E9E9;
+}
+
+#racepie {
+	margin-bottom: 0.5em;
+}
+
+#attendancebar .highcharts-button rect {
+	fill: #E9E9E9;
+}
+
+
+#content-area .sub-header-section {
+	margin-top: 1em;
+}
+
+#knowledgebar .highcharts-button rect {
+	fill: #F0A350;
+}
+
+.circle-description {
+	color: #ffffff;
+	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	font-size: 110%;
+	line-height: 100%;
+	margin-top: 2em;
+}
+
+#stem-circle-section {
+	margin-top: 1em;
+	@include numberCircle;
+}
+
+#life-career-skills {
+	margin-top: 1em;
+	margin-left: -0.5em;
+}
+
+#life-career-skills hr {
+	width: 80%;
+	margin-left: 0.8em;
+}
+
+#life-career-skills .stat {
+	color: #ffffff;
+	font-family: 'ColaborateBoldRegular', Arial, sans-serif;
+	font-size: 550%;
+	margin-left: -0.7em;
+}
+
+#life-career-skills .description {
+	color: #ffffff;
+	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	font-size: 120%;
+	margin-top: 0em;
+}
+
+#life-career-skills table{
+	background: #F0A350;
+	border: #F0A350;
+}
+
+#life-career-skills table tr td {
+	padding-top: 3.5em;
+}
+
+
+#life-career-skills table tr:nth-of-type(even) {
+	background: #F0A350;
+}
+
+#profile-stats {
+	font-family: 'ColaborateLightRegular', Arial, sans-serif;
+	background-color: #E9E9E9; 
+	border: 0px;
+	margin-top: 1em;
+}
+
+#profile-stats tr:nth-of-type(even) {
+	background: #E9E9E9;
+}
+
+#profile-stats .profile-label {
+	color: #2f7ed8;
+	font-size: 90%;
+}
+
+#profile-stats .profile-details {
+	color: #153a54;
+	font-size: 120%;
+}
+
+#student-attendance-percent {
+	font-family: 'Francois One', sans-serif;
+	font-size: 300%;
+	color: #153a54;
+	margin-top: 0.3em;
+}
+
+#student-attendance-caption {
+	font-family: 'ColaborateLightRegular', Arial, sans-serif;
+	color: #153a54;
+	margin-bottom: 2.5em;
+}
+
+#quicklinks a {
+	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	font-size: 120%;
+	color: #2f7ed8;
+	margin-left: 0.3em;
+}
+
+
+#quicklinks {
+	@include quicklinks;
+}
+
+
+.highcharts-contextmenu {
+    bottom: auto !important;
+    top: 5px;
+}
+
+#knowledgeModal table {
+	margin-top: 2em;
+	width: 100%;
+}
+
+#knowledgeModal ul {
+	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	font-size: 110%;
+}
+
+#knowledgeModal li {
+	padding-top: 1em;
+}
+
+#knowledgeModal table {
+	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	font-size: 130%;
+}
+
+#knowledgeModal th {
+	font-size: 90%;
+}
+
+.percent-change-positive {
+	color: #41AD49;
+}
+
+.percent-change-negative {
+	color: #DC143C;
+}
+
+#flyfishingModal {
+	@include flyFishingModal;
+} 
+
+
+#scienceModal {
+	@include modal;
+}
+
+#engineeringModal {
+	@include modal;
+}
+
+#techModal {
+	@include modal;
+}
+
+
+#mathModal {
+	@include modal;
+}
+
+#attendanceModal {
+	@include modal;
+}
+
+
+#life-career-skills .avg-hours {
+	color: #ffffff;
+	font-family: 'Francois One', sans-serif;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+#lifeCareerModal {
+	@include numberCircleLife;
+	@include modal;
+	@include lifeCareerModal;
+}
+
+.na {
+	color: #ffffff;
+	font-family: 'Francois One', sans-serif;
+	font-size:150%;
+	margin-top: 4em;
+}
+
+

@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<title>Family Tyes</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/foundation-override.css" />
+	<link rel="stylesheet" href="css/font.css" />
+
+	<script src="js/vendor/custom.modernizr.js"></script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+</head>
+<body class="antialiased">
+
+	<nav class="top-bar">
+		<div class="row">
+			<div class="large-10 columns large-centered logo">
+				<div class="row">
+					<div class="large-2 columns">
+						<a href="/">
+							<img src="img/FT-logo-no-background.png" alt="FAMILY TYES" width="130" >
+						</a>
+					</div>
+					<div class="large-3 columns large-offset-5">
+						<form class="custom">
+							<div class="row nav-dropdown">
+      							<select id="customDropdown1" class="medium">
+        							<option>SELECT PROGRAM</option>
+        							<option>BALDWIND HIGH SCHOOL</option>
+        							<option>SARACH HEINZ HOUSE</option>
+      							</select>
+							</div>
+						</form>
+					</div>
+					<div class="large-2 columns text-right">
+						<p>Welcome, Paul Hindes</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </nav>
+
+    <div class="row">
+    	<div class="large-12 columns">
+    		<div class="row" id="dash-subheader">
+    			<div class="large-5 columns" id="program-name">
+    				PAUL HINDES
+    			</div>
+    			<div class="large-3 columns large-offset-4" id="student-search">
+    				<form>
+    					<input type="text" placeholder="SEARCH FOR STUDENT">
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="row">
+		<div class="large-12 columns">
+			<div class="row">
+				<div class="large-4 columns" id="demographics">
+					<div class="main-header-group">
+						<hr>
+						<div class="main-header">
+							PROFILE
+						</div>
+					</div>
+					<table id="profile-stats" class="text-left">
+						<tbody>
+							<tr>
+								<th width="40%" class="profile-label">Name</th>
+								<th width="60%" class="profile-details">Paul Hindes</th>
+							</tr>
+							<tr>
+								<th width="40%" class="profile-label">Age</th>
+								<th width="60%" class="profile-details">12 Years</th>
+							</tr>
+							<tr>
+								<th width="40%" class="profile-label">Gender</th>
+								<th width="60%" class="profile-details">Male</th>
+							</tr>
+							<tr>
+								<th width="40%" class="profile-label">Race</th>
+								<th width="60%" class="profile-details">Caucasian</th>
+							</tr>
+							<tr>
+								<th width="40%" class="profile-label">Date of Birth</th>
+								<th idth="60%" class="profile-details">01/01/2001</th>
+							</tr>
+							<tr>
+								<th width="40%" class="profile-label">Email</th>
+								<th width="60%" class="profile-details">paul.hindes@gmail.com</th>
+							</tr>
+							<tr>
+								<th width="40%" class="profile-label">Phone</th>
+								<th width="60%" class="profile-details">(123) 456-7890</th>
+							</tr>
+							<tr>
+								<th width="40%" class="profile-label">Waiver form</th>
+								<th width="60%" class="profile-details">No</th>
+							</tr>
+						</tbody>
+					</table>
+					<div class="row sub-header-section">
+						<hr class="section-break">
+						<div class="small-12 columns">
+							<div class="row">
+								<div class="small-6 columns sub-header">ATTENDANCE</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-5 columns large-centered text-center" id="student-attendance-percent">
+							80%
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-5 columns large-centered text-center" id="student-attendance-caption">
+							Avg Attendance (%)
+						</div>
+					</div>
+					<div class="row sub-header-section">
+						<hr class="section-break">
+						<div class="small-12 columns" id="quicklinks">
+							<div class="row">
+								<div class="small-6 columns sub-header">QUICKLINKS</div>
+							</div>
+							<ul class="no-bullet">
+								<li><a href="#">View event history</a></li>
+								<li><a href="#">View notes</a></li>
+								<li><a href="#">View family information</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="large-8 columns" id="content-area">
+					<div class="main-header-group">
+						<hr>
+						<div class="main-header">
+							CONTENT LEARNED
+						</div>
+					</div>
+					<div id ="content-learnt" class="row">
+						<div class="large-6 columns">
+							<div class="row sub-header-section">
+								<div class="large-12 columns">
+									<div class="row">
+										<div class="large-12 columns sub-header more-info">KNOWLEDGE <a href="#" data-reveal-id="knowledgeModal"> MORE INFO</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 columns">
+									<div class="row">
+										<div class="large-6 columns">
+											<div id="knowledgebar" style="min-width: 10px; height: 270px;"></div>
+										</div>
+										<div class="large-6 columns">
+											<div id="knowledge_pie" class="numberCircle">89%</div>
+											<div class='circle-description text-center'>
+												Avg % Change in Knowledge Score
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="large-6 columns">
+							<div class="row sub-header-section">
+								<div class="large-12 columns">
+									<div class="row">
+										<div class="large-12 columns sub-header more-info">FLY FISHING SKILLS <a href="#" data-reveal-id="flyfishingModal"> MORE INFO</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 columns">
+									<div class="row">
+										<div class="large-6 columns">
+											<div id="flyskillbar" style="min-width: 10px; height: 270px;"></div>
+										</div>
+										<div class="large-6 columns">
+											<div id="fishing_pie" class="numberCircle">110%</div>
+											<div class='circle-description text-center'>
+												% Change in Number of Skills Learnt
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-header-group">
+						<hr>
+						<div class="main-header">
+							STEM
+						</div>
+					</div>
+					<div class="row" id="stem-circle-section">
+						<div class="large-7 columns">
+							<div class="row">
+								<div class="large-6 columns">
+									<div class="row">
+										<div class="large-12 columns sub-header more-info">SCIENCE <a href="#" data-reveal-id="scienceModal"> MORE INFO</a></div>
+									</div>
+									<div class="row">
+										<div id="science_pie" class="numberCircle">137%</div>
+									</div>
+								</div>
+								<div class="large-6 columns">
+									<div class="row">
+										<div class="large-12 columns sub-header more-info">ENGINEERING <a href="#" data-reveal-id="engineeringModal"> MORE INFO</a></div>
+									</div>
+									<div class="row">
+										<div id="engineering_pie" class="numberCircle">89%</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-6 columns">
+									<div class="row">
+										<div class="large-12 columns sub-header more-info">TECHNOLOGY <a href="#" data-reveal-id="techModal"> MORE INFO</a></div>
+									</div>
+									<div class="row">
+										<div id="tech_pie" class="numberCircle">-29%</div>
+									</div>
+								</div>
+								<div class="large-6 columns">
+									<div class="row">
+										<div class="large-12 columns sub-header more-info">MATH <a href="#" data-reveal-id="mathModal"> MORE INFO</a></div>
+									</div>
+									<div class="row">
+										<div id="math_pie" class="numberCircle">29%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="large-5 columns">
+							<div class="row">
+								<div class="large-12 columns sub-header more-info">LIFE, CAREER SKILLS <a href="#" data-reveal-id="lifeCareerModal"> MORE INFO</a></div>
+							</div>
+							<div class="row" id="life-career-skills">
+								<div class="large-8 columns avg-hours text-left"> AVG HOURS (YTD)</div>
+								<hr>
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<div class="row">
+													<div class="large-4 columns stat">2</div>
+													<div class="large-8 columns description">LIFE SKILLS</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="row">
+													<div class="large-4 columns stat">3</div>
+													<div class="large-8 columns description">CAREER SKILLS</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="row">
+													<div class="large-4 columns stat">4</div>
+													<div class="large-8 columns description">CAREER EXPLORATION</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+  
+  
+  <script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.interchange.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+
+	$(function () {
+		Highcharts.setOptions({
+     		colors: ['#0B1F36','#2f7ed8']
+    	});
+        $('#knowledgebar').highcharts({
+            chart: {
+                type: 'column',
+                paddingTop: '-2em',
+                backgroundColor: "#F0A350",
+                plotBackgroundColor: "#F0A350",
+                spacingRight: 0,
+                marginRight: -30,
+                spacingTop: 0,
+                marginTop: 30,
+                marginLeft: 50,
+            },
+            title: {
+                text: ''
+            },
+            xAxis: {
+                categories: [
+                    ''
+                ],
+                lineWidth: 0
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: ''
+                },
+                gridLineWidth: 0,
+                lineWidth: 0,
+   				minorGridLineWidth: 0,
+   				lineColor: 'transparent',
+   				labels: {
+       				enabled: false
+   				},
+   				minorTickLength: 0,
+   				tickLength: 0
+            },
+            credits: {
+            	enabled: false,
+            },
+            exporting: {
+            	enabled: false,
+            },
+    		legend: {
+    			verticalAlign: 'top',
+                borderWidth: 0,
+                align: 'left',
+                itemStyle: {
+                    color: '#ffffff',
+                    fontFamily: 'ColaborateBoldRegular',
+                },
+    		},
+            tooltip: {
+                enabled: false
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'AVG PRE-TEST',
+                data: [49.9],
+                dataLabels: {
+                    enabled: true,
+                    rotation: 0,
+                    color: '#ffffff',
+                    formatter: function() {
+                        return (this.y);
+                    },
+                    style: {
+                        fontSize: '16px',
+                        fontFamily: 'ColaborateBoldRegular',
+                    }
+                }
+    
+            }, {
+                name: 'AVG POST-TEST',
+                data: [83.6],
+                dataLabels: {
+                    enabled: true,
+                    rotation: 0,
+                    color: '#ffffff',
+                    formatter: function() {
+                        return (this.y);
+                    },
+                    style: {
+                        fontSize: '16px',
+                        fontFamily: 'ColaborateBoldRegular'
+                    }
+                }
+            }]
+        },function(chart){
+        
+           chart.series[0].data[0].graphic.attr({
+                width:15
+            });
+           chart.series[1].data[0].graphic.attr({
+                width:15
+            });
+           
+        });
+    });
+
+	$(function () {
+		Highcharts.setOptions({
+     		colors: ['#0B1F36','#2f7ed8']
+    	});
+        $('#flyskillbar').highcharts({
+            chart: {
+                type: 'column',
+                paddingTop: '-2em',
+                backgroundColor: "#F0A350",
+                plotBackgroundColor: "#F0A350",
+                spacingRight: 0,
+                marginRight: -30,
+                spacingTop: 0,
+                marginTop: 30,
+                marginLeft: 50,
+            },
+            title: {
+                text: ''
+            },
+            xAxis: {
+                categories: [
+                    ''
+                ],
+                lineWidth: 0
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: ''
+                },
+                gridLineWidth: 0,
+                lineWidth: 0,
+   				minorGridLineWidth: 0,
+   				lineColor: 'transparent',
+   				labels: {
+       				enabled: false
+   				},
+   				minorTickLength: 0,
+   				tickLength: 0
+            },
+            credits: {
+            	enabled: false,
+            },
+            exporting: {
+            	enabled: false,
+            },
+    		legend: {
+    			verticalAlign: 'top',
+                borderWidth: 0,
+                align: 'left',
+                itemStyle: {
+                    color: '#ffffff',
+                    fontFamily: 'ColaborateBoldRegular',
+                },
+    		},
+            tooltip: {
+                enabled: false
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '# SKILLS (PRE)',
+                data: [49.9],
+                dataLabels: {
+                    enabled: true,
+                    rotation: 0,
+                    color: '#ffffff',
+                    formatter: function() {
+                        return (this.y);
+                    },
+                    style: {
+                        fontSize: '16px',
+                        fontFamily: 'ColaborateBoldRegular',
+                    }
+                }
+    
+            }, {
+                name: '# SKILLS (POST)',
+                data: [83.6],
+                dataLabels: {
+                    enabled: true,
+                    rotation: 0,
+                    color: '#ffffff',
+                    formatter: function() {
+                        return (this.y);
+                    },
+                    style: {
+                        fontSize: '16px',
+                        fontFamily: 'ColaborateBoldRegular'
+                    }
+                }
+            }]
+        },function(chart){
+        
+           chart.series[0].data[0].graphic.attr({
+                width:15
+            });
+           chart.series[1].data[0].graphic.attr({
+                width:15
+            });
+           
+        });
+    });
+
+	$(function () {
+        $('#knowledgeModal-graph').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Bar Chart of Pre & Post-test Scores by Grade',
+                style: {
+                        fontSize: '20px',
+                        fontFamily: 'ColaborateBoldRegular'
+                    }
+            },
+            credits: {
+            	enabled: false,
+            },
+            exporting: {
+            	enabled: false,
+            },
+            xAxis: {
+                categories: [
+                    '0-20',
+                    '21-40',
+                    '41-60',
+                    '61-80',
+                    '81-100',
+                ],
+                title: {
+                    text: 'Score'
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '# Students'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'PRE-TEST',
+                data: [35, 10, 5, 2, 1]
+    
+            }, {
+                name: 'POST-TEST',
+                data: [15, 20, 15, 2, 1]
+    
+            }]
+        });
+    });
+	
+	$(function () {
+        $('#flyfishingModal-graph').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Bar Chart of Pre & Post-test Scores by # Skills Learnt',
+                style: {
+                        fontSize: '20px',
+                        fontFamily: 'ColaborateBoldRegular'
+                    }
+            },
+            credits: {
+            	enabled: false,
+            },
+            exporting: {
+            	enabled: false,
+            },
+            xAxis: {
+                categories: [
+                    '0-2',
+                    '3-5',
+                    '6-8',
+                    '9-11',
+                    '>11',
+                ],
+                title: {
+                    text: '# Skills Learnt'
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '# Students'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'PRE-TEST',
+                data: [35, 10, 5, 2, 1]
+    
+            }, {
+                name: 'POST-TEST',
+                data: [15, 20, 15, 2, 1]
+    
+            }]
+        });
+    });
+
+	$(function () {
+        $('#scienceModal-graph').highcharts({
+            chart: {
+                type: 'column',
+                spacingTop: 40,
+            },
+            title: {
+                text: 'Histogram of Science Post-Test Scores',
+                style: {
+                        fontSize: '20px',
+                        fontFamily: 'ColaborateBoldRegular'
+                    }
+            },
+            credits: {
+            	enabled: false,
+            },
+            exporting: {
+            	enabled: false,
+            },
+            legend: {
+            	enabled: false,
+            },
+            xAxis: {
+                categories: [
+                    '10',
+                    '20',
+                    '30',
+                    '40',
+                    '50',
+                    '60',
+                    '70',
+                    '80',
+                    '90',
+                    '100'
+                ],
+                title: {
+                    text: 'Score'
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '# Students'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                data: [1, 2, 4, 6, 8, 12, 17, 22, 10,7]
+    
+            }]
+        });
+    });
+
+	$(function () {
+        $('#engineeringModal-graph').highcharts({
+            chart: {
+                type: 'column',
+                spacingTop: 40,
+            },
+            title: {
+                text: 'Histogram of Engineering Post-Test Scores',
+                style: {
+                        fontSize: '20px',
+                        fontFamily: 'ColaborateBoldRegular'
+                    }
+            },
+            credits: {
+            	enabled: false,
+            },
+            exporting: {
+            	enabled: false,
+            },
+            legend: {
+            	enabled: false,
+            },
+            xAxis: {
+                categories: [
+                    '10',
+                    '20',
+                    '30',
+                    '40',
+                    '50',
+                    '60',
+                    '70',
+                    '80',
+                    '90',
+                    '100'
+                ],
+                title: {
+                    text: 'Score'
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '# Students'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                data: [1, 2, 4, 6, 8, 12, 17, 22, 10,7]
+    
+            }]
+        });
+    });
+
+	$(function () {
+        $('#techModal-graph').highcharts({
+            chart: {
+                type: 'column',
+                spacingTop: 40,
+            },
+            title: {
+                text: 'Histogram of Technology Post-Test Scores',
+                style: {
+                        fontSize: '20px',
+                        fontFamily: 'ColaborateBoldRegular'
+                    }
+            },
+            credits: {
+            	enabled: false,
+            },
+            exporting: {
+            	enabled: false,
+            },
+            legend: {
+            	enabled: false,
+            },
+            xAxis: {
+                categories: [
+                    '10',
+                    '20',
+                    '30',
+                    '40',
+                    '50',
+                    '60',
+                    '70',
+                    '80',
+                    '90',
+                    '100'
+                ],
+                title: {
+                    text: 'Score'
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '# Students'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                data: [1, 2, 4, 6, 8, 12, 17, 22, 10,7]
+    
+            }]
+        });
+    });
+    
+    $(function () {
+        $('#mathModal-graph').highcharts({
+            chart: {
+                type: 'column',
+                spacingTop: 40,
+            },
+            title: {
+                text: 'Histogram of Math Post-Test Scores',
+                style: {
+                        fontSize: '20px',
+                        fontFamily: 'ColaborateBoldRegular'
+                    }
+            },
+            credits: {
+            	enabled: false,
+            },
+            exporting: {
+            	enabled: false,
+            },
+            legend: {
+            	enabled: false,
+            },
+            xAxis: {
+                categories: [
+                    '10',
+                    '20',
+                    '30',
+                    '40',
+                    '50',
+                    '60',
+                    '70',
+                    '80',
+                    '90',
+                    '100'
+                ],
+                title: {
+                    text: 'Score'
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '# Students'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                data: [1, 2, 4, 6, 8, 12, 17, 22, 10,7]
+    
+            }]
+        });
+    });
+
+	
+	function resizeContentPie(ele, metric) { 
+		var diameter = (1.75 * metric) + 'px';
+
+		if (metric<0)
+			{
+			var diameter = '130px';
+			var marginLeft = '0.5em';
+			var circleBackground = '#ffffff';
+			var textColor = '#f0a350';
+			}
+		else if (metric>=100)
+			{
+			var diameter = '187px';
+			var marginLeft = '0em';
+			var circleBackground = '#153a54';
+			var textColor = '#ffffff';
+			}
+		else if (metric>50)
+			{
+			var diameter = '168px';
+			var marginLeft = '0.2em';
+			var circleBackground = '#18557f';
+			var textColor = '#ffffff';	
+			}
+		else
+			{
+			var diameter = '149px';
+			var marginLeft = '0.4em';
+			var circleBackground = '#2f7ed8';
+			var textColor = '#ffffff';	
+			}
+		$(ele).css({
+			width: diameter,
+			height: diameter,
+			lineHeight: diameter,
+			background: circleBackground,
+			color: textColor, 
+			marginLeft: marginLeft,
+			marginTop: '0.2em',
+			marginBottom: '-0.5em',
+		});
+	};
+
+	function resizeStemPie(ele, metric) { 
+		var diameter = (1.75 * metric) + 'px';
+
+		if (metric<0)
+			{
+			var diameter = '130px';
+			var marginLeft = '1.3em';
+			var circleBackground = '#ffffff';
+			var textColor = '#f0a350';
+			}
+		else if (metric>=100)
+			{
+			var diameter = '187px';
+			var marginLeft = '0.8em';
+			var circleBackground = '#153a54';
+			var textColor = '#ffffff';
+			}
+		else if (metric>50)
+			{
+			var diameter = '168px';
+			var marginLeft = '1em';
+			var circleBackground = '#18557f';
+			var textColor = '#ffffff';	
+			}
+		else
+			{
+			var diameter = '149px';
+			var marginLeft = '1.2em';
+			var circleBackground = '#2f7ed8';
+			var textColor = '#ffffff';	
+			}
+		$(ele).css({
+			width: diameter,
+			height: diameter,
+			lineHeight: diameter,
+			background: circleBackground,
+			color: textColor, 
+			marginLeft: marginLeft,
+			marginTop: '0.2em',
+			marginBottom: '0.2em',
+		});
+	};
+    
+	// NOTE TO DEV: SERVER CODE HERE
+	var knowledge = 89,
+		fishing = 110,
+		science = 137,
+		engineering = 89,
+		tech = -29,
+		math = 29;
+
+	resizeContentPie('#knowledge_pie', knowledge);
+	resizeContentPie('#fishing_pie', fishing);
+	resizeStemPie('#science_pie', science);
+	resizeStemPie('#engineering_pie', engineering);
+	resizeStemPie('#tech_pie', tech);
+	resizeStemPie('#math_pie', math);
+
+  </script>
+
+  <div id="knowledgeModal" class="reveal-modal">
+  	<div class="main-header-group">
+		<hr>
+		<div class="main-header">CONTENT LEARNT - KNOWLEDGE</div>
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th>Type</th>
+				<th>Avg Pre-Test</th>
+				<th>Avg Post-Test</th>
+				<th>% Change</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Performance Level</td>
+				<td>47</td>
+				<td>78</td>
+				<td class="percent-change-positive">+66.0</td>
+			</tr>
+			<tr>
+				<td>Physics & Math of Fly Casting</td>
+				<td>43</td>
+				<td>72</td>
+				<td class="percent-change-positive">+67.4</td>
+			</tr>
+			<tr>
+				<td>Bugs Water Matter</td>
+				<td>73</td>
+				<td>39</td>
+				<td class="percent-change-negative">-87.2</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="row">
+		<div class="large-6 columns">
+			<div id="knowledgeModal-graph" style="min-width: 550px; height: 300px;"></div>
+		</div>
+		<div class="large-5 columns large-offset-1">
+			<ul class="disc">
+  				<li>83% of the students improved by at least a grade</li>
+  				<li>Test scores increased by approximately 80% on average
+</li>
+  				<li> 70% of the students obtained an A grade in the post-test as compared to the pre-test</li>
+    		<ul>
+		</div>
+	</div>
+  </div>
+
+  <div id="flyfishingModal" class="reveal-modal">
+  	<div class="main-header-group">
+		<hr>
+		<div class="main-header">CONTENT LEARNT - FLY FISHING SKILLS</div>
+	</div>
+	<div class="row">
+		<div class='large-6 columns'>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Avg Pre-Test</th>
+						<th>Avg Post-Test</th>
+						<th>% Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Female</td>
+						<td>2</td>
+						<td>5</td>
+						<td class="percent-change-positive">+150.0</td>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>2.5</td>
+						<td>5.5 </td>
+						<td class="percent-change-positive">+120.0</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="flyfishingModal-graph" style="min-width: 500px; height: 300px;"></div>
+		</div>
+		<div class='large-6 columns flyfishing-points'>
+			<ul>
+  				<li>An average of 3 new skills were mastered</li>
+  				<li>83% of the students learnt 5 or more skills</li>
+    		</ul>
+    		<p>Top 3 Skills Mastered</p>
+    		<hr>
+    		<ol>
+    			<li>Demonstrate porper fly fishing handling techniques</li>
+    			<li>Identify where you would find fish in a pond</li>
+    			<li>Place the label on the corresponding part of a hook</li>
+    		</ol>
+    		<p>Bottom 3 Skills Mastered</p>
+    		<hr>
+    		<ol>
+    			<li>Demonstrate porper fly fishing handling techniques</li>
+    			<li>Identify where you would find fish in a pond</li>
+    			<li>Place the label on the corresponding part of a hook</li>
+    		</ol>
+		</div>
+	</div>
+  </div>
+
+  <div id="scienceModal" class="reveal-modal">
+  	<div class="main-header-group">
+		<hr>
+		<div class="main-header">STEM - SCIENCE</div>
+	</div>
+	<div class="row">
+		<div class='large-6 columns'>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Avg Pre-Test</th>
+						<th>Avg Post-Test</th>
+						<th>% Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Female</td>
+						<td>2</td>
+						<td>5</td>
+						<td class="percent-change-positive">+150.0</td>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>2.5</td>
+						<td>5.5 </td>
+						<td class="percent-change-positive">+120.0</td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Avg Pre-Test</th>
+						<th>Avg Post-Test</th>
+						<th>% Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Caucasian</td>
+						<td>2</td>
+						<td>5</td>
+						<td class="percent-change-positive">+150.0</td>
+					</tr>
+					<tr>
+						<td>Black</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Hispanic</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Asian</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>2.5</td>
+						<td>5.5 </td>
+						<td class="percent-change-positive">+120.0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class='large-6 columns'>
+			<div id="scienceModal-graph" style="min-width: 500px; height: 350px;"></div>
+			<ul>
+  				<li>Average increase in Science Scores - 50%</li>
+  				<li>Females outperformed males in Science</li>
+  				<li>Caucasians performed the best</li>
+    		</ul>
+		</div>
+	</div>
+  </div>
+
+  <div id="engineeringModal" class="reveal-modal">
+  	<div class="main-header-group">
+		<hr>
+		<div class="main-header">STEM - ENGINEERING</div>
+	</div>
+	<div class="row">
+		<div class='large-6 columns'>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Avg Pre-Test</th>
+						<th>Avg Post-Test</th>
+						<th>% Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Female</td>
+						<td>2</td>
+						<td>5</td>
+						<td class="percent-change-positive">+150.0</td>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>2.5</td>
+						<td>5.5 </td>
+						<td class="percent-change-positive">+120.0</td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Avg Pre-Test</th>
+						<th>Avg Post-Test</th>
+						<th>% Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Caucasian</td>
+						<td>2</td>
+						<td>5</td>
+						<td class="percent-change-positive">+150.0</td>
+					</tr>
+					<tr>
+						<td>Black</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Hispanic</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Asian</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>2.5</td>
+						<td>5.5 </td>
+						<td class="percent-change-positive">+120.0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class='large-6 columns'>
+			<div id="engineeringModal-graph" style="min-width: 500px; height: 350px;"></div>
+			<ul>
+  				<li>Average increase in Engineering Scores - 50%</li>
+  				<li>Females outperformed males in Engineering</li>
+  				<li>Caucasians performed the best</li>
+    		</ul>
+		</div>
+	</div>
+  </div>
+
+  <div id="techModal" class="reveal-modal">
+  	<div class="main-header-group">
+		<hr>
+		<div class="main-header">STEM - TECHNOLOGY</div>
+	</div>
+	<div class="row">
+		<div class='large-6 columns'>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Avg Pre-Test</th>
+						<th>Avg Post-Test</th>
+						<th>% Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Female</td>
+						<td>2</td>
+						<td>5</td>
+						<td class="percent-change-positive">+150.0</td>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>2.5</td>
+						<td>5.5 </td>
+						<td class="percent-change-positive">+120.0</td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Avg Pre-Test</th>
+						<th>Avg Post-Test</th>
+						<th>% Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Caucasian</td>
+						<td>2</td>
+						<td>5</td>
+						<td class="percent-change-positive">+150.0</td>
+					</tr>
+					<tr>
+						<td>Black</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Hispanic</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Asian</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>2.5</td>
+						<td>5.5 </td>
+						<td class="percent-change-positive">+120.0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class='large-6 columns flyfishing-points'>
+			<div id="techModal-graph" style="min-width: 500px; height: 350px;"></div>
+			<ul>
+  				<li>Average increase in Technology Scores - 50%</li>
+  				<li>Females outperformed males in Technology</li>
+  				<li>Caucasians performed the best</li>
+    		</ul>
+		</div>
+	</div>
+  </div>
+
+  <div id="mathModal" class="reveal-modal">
+  	<div class="main-header-group">
+		<hr>
+		<div class="main-header">STEM - MATH</div>
+	</div>
+	<div class="row">
+		<div class='large-6 columns'>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Avg Pre-Test</th>
+						<th>Avg Post-Test</th>
+						<th>% Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Female</td>
+						<td>2</td>
+						<td>5</td>
+						<td class="percent-change-positive">+150.0</td>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>2.5</td>
+						<td>5.5 </td>
+						<td class="percent-change-positive">+120.0</td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Avg Pre-Test</th>
+						<th>Avg Post-Test</th>
+						<th>% Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Caucasian</td>
+						<td>2</td>
+						<td>5</td>
+						<td class="percent-change-positive">+150.0</td>
+					</tr>
+					<tr>
+						<td>Black</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Hispanic</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Asian</td>
+						<td>3</td>
+						<td>6</td>
+						<td class="percent-change-positive">+100.0</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>2.5</td>
+						<td>5.5 </td>
+						<td class="percent-change-positive">+120.0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class='large-6 columns flyfishing-points'>
+			<div id="mathModal-graph" style="min-width: 500px; height: 350px;"></div>
+			<ul>
+  				<li>Average increase in Math Scores - 50%</li>
+  				<li>Females outperformed males in Math</li>
+  				<li>Caucasians performed the best</li>
+    		</ul>
+		</div>
+	</div>
+  </div>
+
+  <div id="lifeCareerModal" class="reveal-modal">
+  	<div class="main-header-group">
+		<hr>
+		<div class="main-header">STEM - LIFE, CAREER SKILLS</div>
+	</div>
+	<div class="row">
+		<div class='large-3 columns'>
+			<div class="row">
+				<div id="life_pie" class="numberCircle">2<p class="lifeCareerDescription">Hours on <br>Life Skills</p>
+				</div>
+			</div>
+			<div class="row">
+				<div id="career_pie" class="numberCircle">3<p class="lifeCareerDescription">Hours on <br>Career Skills</p>
+				</div>
+			</div>
+			<div class="row">
+				<div id="explore_pie" class="numberCircle">2<p class="lifeCareerDescription">Hours on <br>Career Exploration</p>
+				</div>
+			</div>
+		</div>
+		<div class='large-9 columns lifeCareer-points'>
+    		<p>Top 3 Skills Mastered</p>
+    		<hr>
+    		<table>
+				<thead>
+					<tr>
+						<th>Rank</th>
+						<th>Life Skills</th>
+						<th>Career Skills</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Communication</td>
+						<td>Presentation</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Working in a group</td>
+						<td>Communication</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Planning</td>
+						<td>Working in a group</td>
+					</tr>
+				</tbody>
+			</table>
+    		<p>Reflections</p>
+    		<hr>
+    		<ol>
+    			<li>Demonstrate porper fly fishing handling techniques</li>
+    			<li>Identify where you would find fish in a pond</li>
+    			<li>Place the label on the corresponding part of a hook</li>
+    		</ol>
+		</div>
+	</div>
+  </div>
+</body>
+</html>
