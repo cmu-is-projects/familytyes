@@ -76,14 +76,14 @@
                     <table id="basic-stats">
                         <tbody>
                             <tr id="table-stats">
-                                <th width="30%">89</th>
-                                <th idth="30%">4</th>
-                                <th idth="30%">12</th>
+                                <th>89</th>
+                                <th>4</th>
+                                <th>12</th>
                             </tr>
                             <tr id="table-stats-description">
-                                <th width="30%">STUDENTS</th>
-                                <th idth="30%">WEEKS</th>
-                                <th idth="30%">AVG AGE</th>
+                                <th>STUDENTS</th>
+                                <th>WEEKS</th>
+                                <th>AVG AGE</th>
                             </tr>
                         </tbody>
                     </table>
@@ -211,10 +211,12 @@
                             <div class="row">
                                 <div class="large-6 columns">
                                     <div class="row">
-                                        <div class="large-12 columns sub-header more-info">SCIENCE <a href="#" data-reveal-id="scienceModal"> MORE INFO</a></div>
+                                        <div class="large-12 columns sub-header more-info">SCIENCE</div>
                                     </div>
                                     <div class="row">
-                                        <div id="science_pie" class="numberCircle">137%</div>
+                                        <div class='na text-center'>
+                                            N/A
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="large-6 columns">
@@ -434,114 +436,7 @@
 });
     
     
-    $(function () {
-        Highcharts.setOptions({
-            colors: ['#0B1F36','#2f7ed8']
-        });
-        $('#knowledgebar').highcharts({
-            chart: {
-                type: 'column',
-                paddingTop: '-2em',
-                backgroundColor: "#F0A350",
-                plotBackgroundColor: "#F0A350",
-                spacingRight: 0,
-                marginRight: -30,
-                spacingTop: 0,
-                marginTop: 30,
-                marginLeft: 50,
-            },
-            title: {
-                text: ''
-            },
-            xAxis: {
-                categories: [
-                    ''
-                ],
-                lineWidth: 0
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: ''
-                },
-                gridLineWidth: 0,
-                lineWidth: 0,
-                minorGridLineWidth: 0,
-                lineColor: 'transparent',
-                labels: {
-                    enabled: false
-                },
-                minorTickLength: 0,
-                tickLength: 0
-            },
-            credits: {
-                enabled: false,
-            },
-            exporting: {
-                enabled: false,
-            },
-            legend: {
-                verticalAlign: 'top',
-                borderWidth: 0,
-                align: 'left',
-                itemStyle: {
-                    color: '#ffffff',
-                    fontFamily: 'ColaborateBoldRegular',
-                },
-            },
-            tooltip: {
-                enabled: false
-            },
-            plotOptions: {
-                column: {
-                    pointPadding: 0.2,
-                    borderWidth: 0
-                }
-            },
-            series: [{
-                name: 'AVG PRE-TEST',
-                data: [49.9],
-                dataLabels: {
-                    enabled: true,
-                    rotation: 0,
-                    color: '#ffffff',
-                    formatter: function() {
-                        return (this.y);
-                    },
-                    style: {
-                        fontSize: '16px',
-                        fontFamily: 'ColaborateBoldRegular',
-                    }
-                }
     
-            }, {
-                name: 'AVG POST-TEST',
-                data: [83.6],
-                dataLabels: {
-                    enabled: true,
-                    rotation: 0,
-                    color: '#ffffff',
-                    formatter: function() {
-                        return (this.y);
-                    },
-                    style: {
-                        fontSize: '16px',
-                        fontFamily: 'ColaborateBoldRegular'
-                    }
-                }
-            }]
-        },function(chart){
-        
-           chart.series[0].data[0].graphic.attr({
-                width:15
-            });
-           chart.series[1].data[0].graphic.attr({
-                width:15
-            });
-           
-        });
-    });
-
     $(function () {
         Highcharts.setOptions({
             colors: ['#0B1F36','#2f7ed8']
@@ -720,68 +615,6 @@
         });
     });
 
-
-    $(function () {
-        $('#knowledgeModal-graph').highcharts({
-            chart: {
-                type: 'column'
-            },
-            title: {
-                text: 'Bar Chart of Pre & Post-test Scores by Grade',
-                style: {
-                        fontSize: '20px',
-                        fontFamily: 'ColaborateBoldRegular'
-                    }
-            },
-            credits: {
-                enabled: false,
-            },
-            exporting: {
-                enabled: false,
-            },
-            xAxis: {
-                categories: [
-                    '0-20',
-                    '21-40',
-                    '41-60',
-                    '61-80',
-                    '81-100',
-                ],
-                title: {
-                    text: 'Score'
-                }
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: '# Students'
-                }
-            },
-            tooltip: {
-                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
-                footerFormat: '</table>',
-                shared: true,
-                useHTML: true
-            },
-            plotOptions: {
-                column: {
-                    pointPadding: 0.2,
-                    borderWidth: 0
-                }
-            },
-            series: [{
-                name: 'PRE-TEST',
-                data: [35, 10, 5, 2, 1]
-    
-            }, {
-                name: 'POST-TEST',
-                data: [15, 20, 15, 2, 1]
-    
-            }]
-        });
-    });
     
     $(function () {
         $('#flyfishingModal-graph').highcharts({
@@ -840,72 +673,6 @@
             }, {
                 name: 'POST-TEST',
                 data: [15, 20, 15, 2, 1]
-    
-            }]
-        });
-    });
-
-    $(function () {
-        $('#scienceModal-graph').highcharts({
-            chart: {
-                type: 'column',
-                spacingTop: 40,
-            },
-            title: {
-                text: 'Histogram of Science Post-Test Scores',
-                style: {
-                        fontSize: '20px',
-                        fontFamily: 'ColaborateBoldRegular'
-                    }
-            },
-            credits: {
-                enabled: false,
-            },
-            exporting: {
-                enabled: false,
-            },
-            legend: {
-                enabled: false,
-            },
-            xAxis: {
-                categories: [
-                    '10',
-                    '20',
-                    '30',
-                    '40',
-                    '50',
-                    '60',
-                    '70',
-                    '80',
-                    '90',
-                    '100'
-                ],
-                title: {
-                    text: 'Score'
-                }
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: '# Students'
-                }
-            },
-            tooltip: {
-                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
-                footerFormat: '</table>',
-                shared: true,
-                useHTML: true
-            },
-            plotOptions: {
-                column: {
-                    pointPadding: 0.2,
-                    borderWidth: 0
-                }
-            },
-            series: [{
-                data: [1, 2, 4, 6, 8, 12, 17, 22, 10,7]
     
             }]
         });
@@ -1286,56 +1053,6 @@
     </div>
   </div>
 
-  <div id="knowledgeModal" class="reveal-modal">
-    <div class="main-header-group">
-        <hr>
-        <div class="main-header">CONTENT LEARNT - KNOWLEDGE</div>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Avg Pre-Test</th>
-                <th>Avg Post-Test</th>
-                <th>% Change</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Performance Level</td>
-                <td>47</td>
-                <td>78</td>
-                <td class="percent-change-positive">+66.0</td>
-            </tr>
-            <tr>
-                <td>Physics & Math of Fly Casting</td>
-                <td>43</td>
-                <td>72</td>
-                <td class="percent-change-positive">+67.4</td>
-            </tr>
-            <tr>
-                <td>Bugs Water Matter</td>
-                <td>73</td>
-                <td>39</td>
-                <td class="percent-change-negative">-87.2</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="row">
-        <div class="large-6 columns">
-            <div id="knowledgeModal-graph" style="min-width: 550px; height: 300px;"></div>
-        </div>
-        <div class="large-5 columns large-offset-1">
-            <ul class="disc">
-                <li>83% of the students improved by at least a grade</li>
-                <li>Test scores increased by approximately 80% on average
-</li>
-                <li> 70% of the students obtained an A grade in the post-test as compared to the pre-test</li>
-            <ul>
-        </div>
-    </div>
-  </div>
-
   <div id="flyfishingModal" class="reveal-modal">
     <div class="main-header-group">
         <hr>
@@ -1394,97 +1111,6 @@
                 <li>Identify where you would find fish in a pond</li>
                 <li>Place the label on the corresponding part of a hook</li>
             </ol>
-        </div>
-    </div>
-  </div>
-
-  <div id="scienceModal" class="reveal-modal">
-    <div class="main-header-group">
-        <hr>
-        <div class="main-header">STEM - SCIENCE</div>
-    </div>
-    <div class="row">
-        <div class='large-6 columns'>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Avg Pre-Test</th>
-                        <th>Avg Post-Test</th>
-                        <th>% Change</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Female</td>
-                        <td>2</td>
-                        <td>5</td>
-                        <td class="percent-change-positive">+150.0</td>
-                    </tr>
-                    <tr>
-                        <td>Male</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td class="percent-change-positive">+100.0</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>2.5</td>
-                        <td>5.5 </td>
-                        <td class="percent-change-positive">+120.0</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Avg Pre-Test</th>
-                        <th>Avg Post-Test</th>
-                        <th>% Change</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Caucasian</td>
-                        <td>2</td>
-                        <td>5</td>
-                        <td class="percent-change-positive">+150.0</td>
-                    </tr>
-                    <tr>
-                        <td>Black</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td class="percent-change-positive">+100.0</td>
-                    </tr>
-                    <tr>
-                        <td>Hispanic</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td class="percent-change-positive">+100.0</td>
-                    </tr>
-                    <tr>
-                        <td>Asian</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td class="percent-change-positive">+100.0</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>2.5</td>
-                        <td>5.5 </td>
-                        <td class="percent-change-positive">+120.0</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class='large-6 columns'>
-            <div id="scienceModal-graph" style="min-width: 500px; height: 350px;"></div>
-            <ul>
-                <li>Average increase in Science Scores - 50%</li>
-                <li>Females outperformed males in Science</li>
-                <li>Caucasians performed the best</li>
-            </ul>
         </div>
     </div>
   </div>
