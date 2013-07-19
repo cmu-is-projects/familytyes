@@ -107,9 +107,8 @@ body {
 	}
 
 	a {
-		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-		font-size: 120%;
-		color: #2f7ed8;
+		font-family: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
+		color: #153a54;
 		margin-left: 0.3em;
 	}
 
@@ -200,11 +199,11 @@ body {
 
 #dash-subheader {
 	background: #18557F;
-	font-family: 'Francois One', sans-serif;
 }
 
 #program-name {
 	color: #ffffff;
+	font-family: 'Francois One', sans-serif;
 	font-size: 180%;
 	padding-top: 0.7em;
 	padding-bottom: 0.5em;
@@ -279,8 +278,8 @@ body {
 		padding: 0em 0.625em;
 	}
 
-	#table-stats {
-		color: #153A54;
+	#table-stats th {
+		color: #153a54;
 		font-size: 300%;
 		font-weight: bold;
 		font-family: 'Francois One', sans-serif;
@@ -288,8 +287,8 @@ body {
 		border-bottom: none;
 	}
 	
-	#table-stats-description {
-		color: #153A54;
+	#table-stats-description th {
+		color: #153a54;
 		font: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
 		background-color: #E9E9E9;
 	}
@@ -426,7 +425,7 @@ body {
 }
 
 #student-attendance-caption {
-	font-family: 'ColaborateLightRegular', Arial, sans-serif;
+	font-family: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
 	color: #153a54;
 	margin-bottom: 2.5em;
 }
