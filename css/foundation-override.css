@@ -3,38 +3,38 @@ body {
   background: #153A54;
 }
 
-/* line 190, ../sass/foundation-override.scss */
+/* line 192, ../sass/foundation-override.scss */
 .top-bar {
   height: 75px;
   background: #0B1F36;
   margin-bottom: 0em;
 }
-/* line 102, ../sass/foundation-override.scss */
+/* line 120, ../sass/foundation-override.scss */
 .top-bar .logo img {
   padding-top: 0.7em;
 }
-/* line 106, ../sass/foundation-override.scss */
+/* line 124, ../sass/foundation-override.scss */
 .top-bar p {
   color: #ffffff;
   padding-top: 1.4em;
   font: 18px/27px 'ColaborateThinRegular', Arial, sans-serif;
 }
-/* line 112, ../sass/foundation-override.scss */
+/* line 130, ../sass/foundation-override.scss */
 .top-bar form {
   font: 18px/27px 'ColaboratediumRegular', Arial, sans-serif;
 }
-/* line 116, ../sass/foundation-override.scss */
+/* line 134, ../sass/foundation-override.scss */
 .top-bar .nav-dropdown {
   padding-top: 1.05em;
 }
 
-/* line 194, ../sass/foundation-override.scss */
+/* line 196, ../sass/foundation-override.scss */
 #dash-subheader {
   background: #18557F;
   font-family: 'Francois One', sans-serif;
 }
 
-/* line 199, ../sass/foundation-override.scss */
+/* line 201, ../sass/foundation-override.scss */
 #program-name {
   color: #ffffff;
   font-size: 180%;
@@ -42,52 +42,26 @@ body {
   padding-bottom: 0.5em;
 }
 
-/* line 206, ../sass/foundation-override.scss */
+/* line 208, ../sass/foundation-override.scss */
 #student-search {
   padding-top: 1em;
   font: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
 }
 
-/* line 212, ../sass/foundation-override.scss */
+/* line 246, ../sass/foundation-override.scss */
 #demographics {
   background: #E9E9E9;
   height: 900px;
 }
-/* line 74, ../sass/foundation-override.scss */
+/* line 85, ../sass/foundation-override.scss */
 #demographics .more-info a {
   color: #323232;
   font-family: 'Francois One', sans-serif;
   font-size: 70%;
   margin-top: 0.3em;
 }
-
-/* line 218, ../sass/foundation-override.scss */
-#content-area {
-  background: #F0A350;
-  height: 900px;
-}
-/* line 74, ../sass/foundation-override.scss */
-#content-area .more-info a {
-  color: white;
-  font-family: 'Francois One', sans-serif;
-  font-size: 70%;
-  margin-top: 0.3em;
-}
-
-/* line 32, ../sass/foundation-override.scss */
-#content-learnt .numberCircle {
-  -webkit-border-radius: 999px;
-  -moz-border-radius: 999px;
-  border-radius: 999px;
-  behavior: url(PIE.htc);
-  text-align: center;
-  font-family: 'Francois One', sans-serif;
-  font-weight: bold;
-  font-size: 300%;
-}
-
-/* line 228, ../sass/foundation-override.scss */
-.main-header {
+/* line 216, ../sass/foundation-override.scss */
+#demographics .main-header {
   font-family: 'Francois One', sans-serif;
   background-color: #18557F;
   color: #ffffff;
@@ -100,15 +74,13 @@ body {
   z-index: 1;
   width: 80%;
 }
-
-/* line 243, ../sass/foundation-override.scss */
-.main-header-group {
+/* line 230, ../sass/foundation-override.scss */
+#demographics .main-header-group {
   margin-top: 2em;
 }
-
-/* line 247, ../sass/foundation-override.scss */
-.main-header-group hr {
-  border: solid #F0A350;
+/* line 234, ../sass/foundation-override.scss */
+#demographics hr {
+  border: solid #f0a350;
   border-width: 5px 0 0;
   /*margin: 2em -0.4em 1.1875em;*/
   width: 100%;
@@ -116,18 +88,59 @@ body {
   margin-right: auto;
 }
 
-/* line 256, ../sass/foundation-override.scss */
-#content-area .main-header-group hr {
-  border: solid #F2BD84;
+/* line 253, ../sass/foundation-override.scss */
+#content-area {
+  background: #F0A350;
+  height: 900px;
+}
+/* line 85, ../sass/foundation-override.scss */
+#content-area .more-info a {
+  color: white;
+  font-family: 'Francois One', sans-serif;
+  font-size: 70%;
+  margin-top: 0.3em;
+}
+/* line 216, ../sass/foundation-override.scss */
+#content-area .main-header {
+  font-family: 'Francois One', sans-serif;
+  background-color: #18557F;
+  color: #ffffff;
+  font-size: 180%;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: -1.5em;
+  margin-left: 0.5em;
+  z-index: 1;
+  width: 80%;
+}
+/* line 230, ../sass/foundation-override.scss */
+#content-area .main-header-group {
+  margin-top: 2em;
+}
+/* line 234, ../sass/foundation-override.scss */
+#content-area hr {
+  border: solid #f2bd84;
   border-width: 0.32em 0 0;
+  /*margin: 2em -0.4em 1.1875em;*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 261, ../sass/foundation-override.scss */
-#basic-stats tr th {
-  padding: 0em 0.625em;
+/* line 43, ../sass/foundation-override.scss */
+#content-learnt .numberCircle {
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  border-radius: 999px;
+  behavior: url(PIE.htc);
+  text-align: center;
+  font-family: 'Francois One', sans-serif;
+  font-weight: bold;
+  font-size: 300%;
 }
 
-/* line 265, ../sass/foundation-override.scss */
+/* line 294, ../sass/foundation-override.scss */
 #basic-stats {
   margin-top: 1em;
   border: none;
@@ -135,24 +148,27 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* line 272, ../sass/foundation-override.scss */
-#table-stats {
+/* line 273, ../sass/foundation-override.scss */
+#basic-stats tr th {
+  padding: 0em 0.625em;
+}
+/* line 277, ../sass/foundation-override.scss */
+#basic-stats #table-stats {
   color: #153A54;
-  font-size: 200%;
+  font-size: 300%;
+  font-weight: bold;
   font-family: 'Francois One', sans-serif;
   background-color: #E9E9E9;
   border-bottom: none;
 }
-
-/* line 280, ../sass/foundation-override.scss */
-#table-stats-description {
+/* line 286, ../sass/foundation-override.scss */
+#basic-stats #table-stats-description {
   color: #153A54;
   font: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
   background-color: #E9E9E9;
 }
 
-/* line 286, ../sass/foundation-override.scss */
+/* line 298, ../sass/foundation-override.scss */
 .sub-header {
   color: #153A54;
   font-family: 'Francois One', sans-serif;
@@ -160,7 +176,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* line 293, ../sass/foundation-override.scss */
+/* line 305, ../sass/foundation-override.scss */
 #demographics .sub-header-section hr {
   border: solid #F0A350;
   border-width: 2px 0 0;
@@ -171,50 +187,35 @@ body {
   margin-bottom: 0.5em;
 }
 
-/* line 303, ../sass/foundation-override.scss */
+/* line 315, ../sass/foundation-override.scss */
 #genderbar {
   margin-bottom: 0.5em;
 }
 
-/* line 307, ../sass/foundation-override.scss */
-#racepie rect {
-  fill: #E9E9E9;
-}
-
-/* line 311, ../sass/foundation-override.scss */
+/* line 320, ../sass/foundation-override.scss */
 #racepie {
   margin-bottom: 0.5em;
 }
 
-/* line 315, ../sass/foundation-override.scss */
-#attendancebar .highcharts-button rect {
-  fill: #E9E9E9;
-}
-
-/* line 320, ../sass/foundation-override.scss */
+/* line 325, ../sass/foundation-override.scss */
 #content-area .sub-header-section {
   margin-top: 1em;
 }
 
-/* line 324, ../sass/foundation-override.scss */
-#knowledgebar .highcharts-button rect {
-  fill: #F0A350;
-}
-
-/* line 328, ../sass/foundation-override.scss */
+/* line 336, ../sass/foundation-override.scss */
 .circle-description {
   color: #ffffff;
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-  font-size: 110%;
+  font-family: 'Francois One', sans-serif;
+  font-size: 18px;
   line-height: 100%;
   margin-top: 2em;
 }
 
-/* line 336, ../sass/foundation-override.scss */
+/* line 342, ../sass/foundation-override.scss */
 #stem-circle-section {
   margin-top: 1em;
 }
-/* line 32, ../sass/foundation-override.scss */
+/* line 43, ../sass/foundation-override.scss */
 #stem-circle-section .numberCircle {
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;
@@ -226,91 +227,91 @@ body {
   font-size: 300%;
 }
 
-/* line 341, ../sass/foundation-override.scss */
+/* line 384, ../sass/foundation-override.scss */
 #life-career-skills {
   margin-top: 1em;
   margin-left: -0.5em;
 }
-
-/* line 346, ../sass/foundation-override.scss */
+/* line 352, ../sass/foundation-override.scss */
 #life-career-skills hr {
   width: 80%;
   margin-left: 0.8em;
 }
-
-/* line 351, ../sass/foundation-override.scss */
+/* line 357, ../sass/foundation-override.scss */
 #life-career-skills .stat {
   color: #ffffff;
   font-family: 'ColaborateBoldRegular', Arial, sans-serif;
   font-size: 550%;
   margin-left: -0.7em;
 }
-
-/* line 358, ../sass/foundation-override.scss */
+/* line 364, ../sass/foundation-override.scss */
 #life-career-skills .description {
   color: #ffffff;
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-  font-size: 120%;
+  font-family: 'Francois One', sans-serif;
+  font-size: 18px;
   margin-top: 0em;
 }
-
-/* line 365, ../sass/foundation-override.scss */
+/* line 369, ../sass/foundation-override.scss */
 #life-career-skills table {
   background: #F0A350;
   border: #F0A350;
 }
-
-/* line 370, ../sass/foundation-override.scss */
+/* line 374, ../sass/foundation-override.scss */
 #life-career-skills table tr td {
   padding-top: 3.5em;
 }
-
-/* line 375, ../sass/foundation-override.scss */
+/* line 378, ../sass/foundation-override.scss */
 #life-career-skills table tr:nth-of-type(even) {
   background: #F0A350;
 }
 
-/* line 379, ../sass/foundation-override.scss */
+/* line 411, ../sass/foundation-override.scss */
 #profile-stats {
   font-family: 'ColaborateLightRegular', Arial, sans-serif;
   background-color: #E9E9E9;
   border: 0px;
   margin-top: 1em;
 }
-
-/* line 386, ../sass/foundation-override.scss */
+/* line 396, ../sass/foundation-override.scss */
 #profile-stats tr:nth-of-type(even) {
   background: #E9E9E9;
 }
-
-/* line 390, ../sass/foundation-override.scss */
+/* line 400, ../sass/foundation-override.scss */
 #profile-stats .profile-label {
   color: #2f7ed8;
   font-size: 90%;
 }
-
-/* line 395, ../sass/foundation-override.scss */
+/* line 405, ../sass/foundation-override.scss */
 #profile-stats .profile-details {
   color: #153a54;
   font-size: 120%;
 }
 
-/* line 400, ../sass/foundation-override.scss */
+/* line 415, ../sass/foundation-override.scss */
 #student-attendance-percent {
+  font-weight: bold;
   font-family: 'Francois One', sans-serif;
   font-size: 300%;
   color: #153a54;
   margin-top: 0.3em;
 }
 
-/* line 407, ../sass/foundation-override.scss */
+/* line 423, ../sass/foundation-override.scss */
 #student-attendance-caption {
   font-family: 'ColaborateLightRegular', Arial, sans-serif;
   color: #153a54;
   margin-bottom: 2.5em;
 }
 
-/* line 413, ../sass/foundation-override.scss */
+/* line 96, ../sass/foundation-override.scss */
+#quicklinks ul {
+  margin-top: 1.5em;
+}
+/* line 100, ../sass/foundation-override.scss */
+#quicklinks .no-bullet li {
+  margin-top: 0.5em;
+}
+/* line 104, ../sass/foundation-override.scss */
 #quicklinks a {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
   font-size: 120%;
@@ -318,217 +319,453 @@ body {
   margin-left: 0.3em;
 }
 
-/* line 85, ../sass/foundation-override.scss */
-#quicklinks ul {
-  margin-top: 1.5em;
+/* line 216, ../sass/foundation-override.scss */
+#knowledgeModal .main-header {
+  font-family: 'Francois One', sans-serif;
+  background-color: #18557F;
+  color: #ffffff;
+  font-size: 180%;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: -1.5em;
+  margin-left: 0.5em;
+  z-index: 1;
+  width: 80%;
 }
-/* line 89, ../sass/foundation-override.scss */
-#quicklinks .no-bullet li {
-  margin-top: 0.5em;
-}
-
-/* line 426, ../sass/foundation-override.scss */
-.highcharts-contextmenu {
-  bottom: auto !important;
-  top: 5px;
-}
-
-/* line 431, ../sass/foundation-override.scss */
-#knowledgeModal table {
+/* line 230, ../sass/foundation-override.scss */
+#knowledgeModal .main-header-group {
   margin-top: 2em;
+}
+/* line 234, ../sass/foundation-override.scss */
+#knowledgeModal hr {
+  border: solid #f0a350;
+  border-width: 5px 0 0;
+  /*margin: 2em -0.4em 1.1875em;*/
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/* line 436, ../sass/foundation-override.scss */
-#knowledgeModal ul {
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-  font-size: 110%;
-}
-
-/* line 441, ../sass/foundation-override.scss */
-#knowledgeModal li {
-  padding-top: 1em;
-}
-
-/* line 445, ../sass/foundation-override.scss */
+/* line 20, ../sass/foundation-override.scss */
 #knowledgeModal table {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
   font-size: 130%;
+  margin-top: 2em;
+  width: 100%;
 }
-
-/* line 450, ../sass/foundation-override.scss */
+/* line 27, ../sass/foundation-override.scss */
 #knowledgeModal th {
   font-size: 90%;
 }
-
-/* line 454, ../sass/foundation-override.scss */
-.percent-change-positive {
+/* line 31, ../sass/foundation-override.scss */
+#knowledgeModal .percent-change-positive {
   color: #41AD49;
 }
-
-/* line 458, ../sass/foundation-override.scss */
-.percent-change-negative {
+/* line 35, ../sass/foundation-override.scss */
+#knowledgeModal .percent-change-negative {
   color: #DC143C;
 }
-
-/* line 150, ../sass/foundation-override.scss */
-#flyfishingModal table {
-  margin-top: 2em;
-  width: 100%;
+/* line 7, ../sass/foundation-override.scss */
+#knowledgeModal ul {
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 }
-/* line 155, ../sass/foundation-override.scss */
+/* line 11, ../sass/foundation-override.scss */
+#knowledgeModal li {
+  margin-left: 2em;
+  font-size: 110%;
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+}
+
+/* line 216, ../sass/foundation-override.scss */
+#flyfishingModal .main-header {
+  font-family: 'Francois One', sans-serif;
+  background-color: #18557F;
+  color: #ffffff;
+  font-size: 180%;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: -1.5em;
+  margin-left: 0.5em;
+  z-index: 1;
+  width: 80%;
+}
+/* line 230, ../sass/foundation-override.scss */
+#flyfishingModal .main-header-group {
+  margin-top: 2em;
+}
+/* line 234, ../sass/foundation-override.scss */
+#flyfishingModal hr {
+  border: solid #f0a350;
+  border-width: 5px 0 0;
+  /*margin: 2em -0.4em 1.1875em;*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 169, ../sass/foundation-override.scss */
 #flyfishingModal ul {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+  margin-bottom: 1em;
 }
-/* line 159, ../sass/foundation-override.scss */
-#flyfishingModal table {
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-  font-size: 130%;
-}
-/* line 164, ../sass/foundation-override.scss */
-#flyfishingModal th {
-  font-size: 90%;
-}
-/* line 168, ../sass/foundation-override.scss */
+/* line 175, ../sass/foundation-override.scss */
 #flyfishingModal .flyfishing-points {
   margin-top: 2em;
   font-size: 110%;
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 }
-/* line 174, ../sass/foundation-override.scss */
+/* line 181, ../sass/foundation-override.scss */
 #flyfishingModal .flyfishing-points p {
   margin-bottom: -0.9em;
   font-size: 130%;
   font-family: 'ColaborateBoldRegular', Arial, sans-serif;
 }
-/* line 180, ../sass/foundation-override.scss */
+/* line 187, ../sass/foundation-override.scss */
 #flyfishingModal .flyfishing-points li {
   margin-left: 1.3em;
 }
-/* line 184, ../sass/foundation-override.scss */
-#flyfishingModal ul {
-  margin-bottom: 1em;
+/* line 20, ../sass/foundation-override.scss */
+#flyfishingModal table {
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+  font-size: 130%;
+  margin-top: 2em;
+  width: 100%;
+}
+/* line 27, ../sass/foundation-override.scss */
+#flyfishingModal th {
+  font-size: 90%;
+}
+/* line 31, ../sass/foundation-override.scss */
+#flyfishingModal .percent-change-positive {
+  color: #41AD49;
+}
+/* line 35, ../sass/foundation-override.scss */
+#flyfishingModal .percent-change-negative {
+  color: #DC143C;
 }
 
+/* line 216, ../sass/foundation-override.scss */
+#scienceModal .main-header {
+  font-family: 'Francois One', sans-serif;
+  background-color: #18557F;
+  color: #ffffff;
+  font-size: 180%;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: -1.5em;
+  margin-left: 0.5em;
+  z-index: 1;
+  width: 80%;
+}
+/* line 230, ../sass/foundation-override.scss */
+#scienceModal .main-header-group {
+  margin-top: 2em;
+}
+/* line 234, ../sass/foundation-override.scss */
+#scienceModal hr {
+  border: solid #f0a350;
+  border-width: 5px 0 0;
+  /*margin: 2em -0.4em 1.1875em;*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* line 7, ../sass/foundation-override.scss */
 #scienceModal ul {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 }
 /* line 11, ../sass/foundation-override.scss */
+#scienceModal li {
+  margin-left: 2em;
+  font-size: 110%;
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+}
+/* line 20, ../sass/foundation-override.scss */
 #scienceModal table {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
   font-size: 130%;
   margin-top: 2em;
   width: 100%;
 }
-/* line 18, ../sass/foundation-override.scss */
+/* line 27, ../sass/foundation-override.scss */
 #scienceModal th {
   font-size: 90%;
 }
-/* line 22, ../sass/foundation-override.scss */
-#scienceModal li {
-  margin-left: 2em;
-  font-size: 110%;
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+/* line 31, ../sass/foundation-override.scss */
+#scienceModal .percent-change-positive {
+  color: #41AD49;
+}
+/* line 35, ../sass/foundation-override.scss */
+#scienceModal .percent-change-negative {
+  color: #DC143C;
 }
 
+/* line 216, ../sass/foundation-override.scss */
+#engineeringModal .main-header {
+  font-family: 'Francois One', sans-serif;
+  background-color: #18557F;
+  color: #ffffff;
+  font-size: 180%;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: -1.5em;
+  margin-left: 0.5em;
+  z-index: 1;
+  width: 80%;
+}
+/* line 230, ../sass/foundation-override.scss */
+#engineeringModal .main-header-group {
+  margin-top: 2em;
+}
+/* line 234, ../sass/foundation-override.scss */
+#engineeringModal hr {
+  border: solid #f0a350;
+  border-width: 5px 0 0;
+  /*margin: 2em -0.4em 1.1875em;*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* line 7, ../sass/foundation-override.scss */
 #engineeringModal ul {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 }
 /* line 11, ../sass/foundation-override.scss */
+#engineeringModal li {
+  margin-left: 2em;
+  font-size: 110%;
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+}
+/* line 20, ../sass/foundation-override.scss */
 #engineeringModal table {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
   font-size: 130%;
   margin-top: 2em;
   width: 100%;
 }
-/* line 18, ../sass/foundation-override.scss */
+/* line 27, ../sass/foundation-override.scss */
 #engineeringModal th {
   font-size: 90%;
 }
-/* line 22, ../sass/foundation-override.scss */
-#engineeringModal li {
-  margin-left: 2em;
-  font-size: 110%;
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+/* line 31, ../sass/foundation-override.scss */
+#engineeringModal .percent-change-positive {
+  color: #41AD49;
+}
+/* line 35, ../sass/foundation-override.scss */
+#engineeringModal .percent-change-negative {
+  color: #DC143C;
 }
 
+/* line 216, ../sass/foundation-override.scss */
+#techModal .main-header {
+  font-family: 'Francois One', sans-serif;
+  background-color: #18557F;
+  color: #ffffff;
+  font-size: 180%;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: -1.5em;
+  margin-left: 0.5em;
+  z-index: 1;
+  width: 80%;
+}
+/* line 230, ../sass/foundation-override.scss */
+#techModal .main-header-group {
+  margin-top: 2em;
+}
+/* line 234, ../sass/foundation-override.scss */
+#techModal hr {
+  border: solid #f0a350;
+  border-width: 5px 0 0;
+  /*margin: 2em -0.4em 1.1875em;*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* line 7, ../sass/foundation-override.scss */
 #techModal ul {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 }
 /* line 11, ../sass/foundation-override.scss */
+#techModal li {
+  margin-left: 2em;
+  font-size: 110%;
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+}
+/* line 20, ../sass/foundation-override.scss */
 #techModal table {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
   font-size: 130%;
   margin-top: 2em;
   width: 100%;
 }
-/* line 18, ../sass/foundation-override.scss */
+/* line 27, ../sass/foundation-override.scss */
 #techModal th {
   font-size: 90%;
 }
-/* line 22, ../sass/foundation-override.scss */
-#techModal li {
-  margin-left: 2em;
-  font-size: 110%;
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+/* line 31, ../sass/foundation-override.scss */
+#techModal .percent-change-positive {
+  color: #41AD49;
+}
+/* line 35, ../sass/foundation-override.scss */
+#techModal .percent-change-negative {
+  color: #DC143C;
 }
 
+/* line 216, ../sass/foundation-override.scss */
+#mathModal .main-header {
+  font-family: 'Francois One', sans-serif;
+  background-color: #18557F;
+  color: #ffffff;
+  font-size: 180%;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: -1.5em;
+  margin-left: 0.5em;
+  z-index: 1;
+  width: 80%;
+}
+/* line 230, ../sass/foundation-override.scss */
+#mathModal .main-header-group {
+  margin-top: 2em;
+}
+/* line 234, ../sass/foundation-override.scss */
+#mathModal hr {
+  border: solid #f0a350;
+  border-width: 5px 0 0;
+  /*margin: 2em -0.4em 1.1875em;*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* line 7, ../sass/foundation-override.scss */
 #mathModal ul {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 }
 /* line 11, ../sass/foundation-override.scss */
+#mathModal li {
+  margin-left: 2em;
+  font-size: 110%;
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+}
+/* line 20, ../sass/foundation-override.scss */
 #mathModal table {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
   font-size: 130%;
   margin-top: 2em;
   width: 100%;
 }
-/* line 18, ../sass/foundation-override.scss */
+/* line 27, ../sass/foundation-override.scss */
 #mathModal th {
   font-size: 90%;
 }
-/* line 22, ../sass/foundation-override.scss */
-#mathModal li {
-  margin-left: 2em;
-  font-size: 110%;
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+/* line 31, ../sass/foundation-override.scss */
+#mathModal .percent-change-positive {
+  color: #41AD49;
+}
+/* line 35, ../sass/foundation-override.scss */
+#mathModal .percent-change-negative {
+  color: #DC143C;
 }
 
+/* line 216, ../sass/foundation-override.scss */
+#attendanceModal .main-header {
+  font-family: 'Francois One', sans-serif;
+  background-color: #18557F;
+  color: #ffffff;
+  font-size: 180%;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: -1.5em;
+  margin-left: 0.5em;
+  z-index: 1;
+  width: 80%;
+}
+/* line 230, ../sass/foundation-override.scss */
+#attendanceModal .main-header-group {
+  margin-top: 2em;
+}
+/* line 234, ../sass/foundation-override.scss */
+#attendanceModal hr {
+  border: solid #f0a350;
+  border-width: 5px 0 0;
+  /*margin: 2em -0.4em 1.1875em;*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* line 7, ../sass/foundation-override.scss */
 #attendanceModal ul {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 }
 /* line 11, ../sass/foundation-override.scss */
+#attendanceModal li {
+  margin-left: 2em;
+  font-size: 110%;
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+}
+/* line 20, ../sass/foundation-override.scss */
 #attendanceModal table {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
   font-size: 130%;
   margin-top: 2em;
   width: 100%;
 }
-/* line 18, ../sass/foundation-override.scss */
+/* line 27, ../sass/foundation-override.scss */
 #attendanceModal th {
   font-size: 90%;
 }
-/* line 22, ../sass/foundation-override.scss */
-#attendanceModal li {
-  margin-left: 2em;
-  font-size: 110%;
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+/* line 31, ../sass/foundation-override.scss */
+#attendanceModal .percent-change-positive {
+  color: #41AD49;
+}
+/* line 35, ../sass/foundation-override.scss */
+#attendanceModal .percent-change-negative {
+  color: #DC143C;
 }
 
-/* line 489, ../sass/foundation-override.scss */
+/* line 479, ../sass/foundation-override.scss */
 #life-career-skills .avg-hours {
   color: #ffffff;
   font-family: 'Francois One', sans-serif;
+  font-size: 18px;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
 }
 
-/* line 49, ../sass/foundation-override.scss */
+/* line 216, ../sass/foundation-override.scss */
+#lifeCareerModal .main-header {
+  font-family: 'Francois One', sans-serif;
+  background-color: #18557F;
+  color: #ffffff;
+  font-size: 180%;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: -1.5em;
+  margin-left: 0.5em;
+  z-index: 1;
+  width: 80%;
+}
+/* line 230, ../sass/foundation-override.scss */
+#lifeCareerModal .main-header-group {
+  margin-top: 2em;
+}
+/* line 234, ../sass/foundation-override.scss */
+#lifeCareerModal hr {
+  border: solid #f0a350;
+  border-width: 5px 0 0;
+  /*margin: 2em -0.4em 1.1875em;*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 60, ../sass/foundation-override.scss */
 #lifeCareerModal .numberCircle {
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;
@@ -551,46 +788,54 @@ body {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 }
 /* line 11, ../sass/foundation-override.scss */
+#lifeCareerModal li {
+  margin-left: 2em;
+  font-size: 110%;
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+}
+/* line 20, ../sass/foundation-override.scss */
 #lifeCareerModal table {
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
   font-size: 130%;
   margin-top: 2em;
   width: 100%;
 }
-/* line 18, ../sass/foundation-override.scss */
+/* line 27, ../sass/foundation-override.scss */
 #lifeCareerModal th {
   font-size: 90%;
 }
-/* line 22, ../sass/foundation-override.scss */
-#lifeCareerModal li {
-  margin-left: 2em;
-  font-size: 110%;
-  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+/* line 31, ../sass/foundation-override.scss */
+#lifeCareerModal .percent-change-positive {
+  color: #41AD49;
 }
-/* line 124, ../sass/foundation-override.scss */
+/* line 35, ../sass/foundation-override.scss */
+#lifeCareerModal .percent-change-negative {
+  color: #DC143C;
+}
+/* line 142, ../sass/foundation-override.scss */
 #lifeCareerModal .description {
   font-size: 40%;
   margin-top: -1.8em;
   line-height: 100%;
 }
-/* line 130, ../sass/foundation-override.scss */
+/* line 148, ../sass/foundation-override.scss */
 #lifeCareerModal .lifeCareer-points {
   margin-top: 2em;
   font-size: 110%;
   font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 }
-/* line 136, ../sass/foundation-override.scss */
+/* line 154, ../sass/foundation-override.scss */
 #lifeCareerModal .lifeCareer-points p {
   margin-bottom: -0.9em;
   font-size: 130%;
   font-family: 'ColaborateBoldRegular', Arial, sans-serif;
 }
-/* line 142, ../sass/foundation-override.scss */
+/* line 160, ../sass/foundation-override.scss */
 #lifeCareerModal .lifeCareer-points li {
   margin-left: 1.3em;
 }
 
-/* line 502, ../sass/foundation-override.scss */
+/* line 493, ../sass/foundation-override.scss */
 .na {
   color: #ffffff;
   font-family: 'Francois One', sans-serif;

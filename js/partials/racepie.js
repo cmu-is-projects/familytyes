@@ -1,6 +1,7 @@
 $(function () {
     $('#racepie').highcharts({
         chart: {
+            backgroundColor: "#E9E9E9",
             plotBackgroundColor: "#E9E9E9",
             plotBorderWidth: "#E9E9E9",
             plotShadow: false,

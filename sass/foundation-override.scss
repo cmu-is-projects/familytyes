@@ -2,12 +2,21 @@ body {
 	background: #153A54;
 }
 
-@mixin modal {
-
+@mixin list {
+	
 	ul {
 		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 	}
 
+	li {
+		margin-left: 2em;
+		font-size: 110%;
+		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	}
+}
+
+@mixin table {
+	
 	table {
 		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 		font-size: 130%;
@@ -19,10 +28,12 @@ body {
 		font-size: 90%;
 	}
 
-	li {
-		margin-left: 2em;
-		font-size: 110%;
-		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	.percent-change-positive {
+		color: #41AD49;
+	}
+
+	.percent-change-negative {
+		color: #DC143C;
 	}
 
 }
@@ -90,6 +101,13 @@ body {
 		margin-top: 0.5em;
 	}
 
+	a {
+		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+		font-size: 120%;
+		color: #2f7ed8;
+		margin-left: 0.3em;
+	}
+
 
 } 
 
@@ -147,23 +165,12 @@ body {
 
 @mixin flyFishingModal {
 
-	table {
-		margin-top: 2em;
-		width: 100%;
-	}
 	
 	ul {
 		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-	}
-	
-	table {
-		font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-		font-size: 130%;
+		margin-bottom: 1em;
 	}
 
-	th {
-		font-size: 90%;
-	}
 
 	.flyfishing-points {
 		margin-top: 2em;
@@ -180,11 +187,6 @@ body {
 	.flyfishing-points li {
 		margin-left: 1.3em;
 	}
-
-	ul {
-		margin-bottom: 1em;
-	}
-	
 }
 
 .top-bar {
@@ -209,78 +211,88 @@ body {
 }
 
 
+@mixin main-header-group($border: solid #F0A350, $border-width: 5px 0 0) {
+	
+	.main-header {
+		font-family: 'Francois One', sans-serif;
+		background-color: #18557F;
+		color: #ffffff;
+		font-size: 180%;
+		padding-left: 0.5em;
+		padding-top: 0.3em;
+		padding-bottom: 0.3em;
+		margin-top: -1.5em;
+		margin-left: 0.5em;
+		z-index: 1;
+		width: 80%;
+	}
+	
+	.main-header-group {
+		margin-top: 2em;
+	}
+
+	hr {
+		border: $border;
+		border-width: $border-width;
+		/*margin: 2em -0.4em 1.1875em;*/
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+}
+
 #demographics {
 	background: #E9E9E9;
 	height: 900px;	
 	@include moreInfo(#323232);
+	@include main-header-group;
 }
 
 #content-area {
 	background: #F0A350;
 	height: 900px;
 	@include moreInfo(#ffffff);	
+	@include main-header-group(solid #F2BD84,0.32em 0 0);
 }
 
 #content-learnt {
 	@include numberCircle;
 }
 
-.main-header {
-	font-family: 'Francois One', sans-serif;
-	background-color: #18557F;
-	color: #ffffff;
-	font-size: 180%;
-	padding-left: 0.5em;
-	padding-top: 0.3em;
-	padding-bottom: 0.3em;
-	margin-top: -1.5em;
-	margin-left: 0.5em;
-	z-index: 1;
-	width: 80%
-	;
-}
 
-.main-header-group {
-	margin-top: 2em;
-}
-
-.main-header-group hr {
-	border: solid #F0A350;
-	border-width: 5px 0 0;
-	/*margin: 2em -0.4em 1.1875em;*/
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#content-area .main-header-group hr {
-	border: solid #F2BD84;
-	border-width: 0.32em 0 0;
-}
-
-#basic-stats tr th {
-	padding: 0em 0.625em;
-}
-
-#basic-stats {
+@mixin basic-stats {
+	
 	margin-top: 1em;
 	border: none;
 	background: none;
 	margin-left: auto;
 	margin-right: auto;
-}
-#table-stats {
-	color: #153A54;
-	font-size: 200%;
-	font-family: 'Francois One', sans-serif;
-	background-color: #E9E9E9;
-	border-bottom: none;
+
+	tr th {
+		padding: 0em 0.625em;
+	}
+
+	#table-stats {
+		color: #153A54;
+		font-size: 300%;
+		font-weight: bold;
+		font-family: 'Francois One', sans-serif;
+		background-color: #E9E9E9;
+		border-bottom: none;
+	}
+	
+	#table-stats-description {
+		color: #153A54;
+		font: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
+		background-color: #E9E9E9;
+	}
+
 }
 
-#table-stats-description {
-	color: #153A54;
-	font: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
-	background-color: #E9E9E9;
+#basic-stats {
+	@include basic-stats;
 }
 
 .sub-header {
@@ -290,7 +302,7 @@ body {
 	letter-spacing:1px;
 }
 
- #demographics .sub-header-section hr {
+#demographics .sub-header-section hr {
 	border: solid #F0A350;
 	border-width: 2px 0 0;
 	width: 90%;
@@ -304,16 +316,9 @@ body {
 	margin-bottom: 0.5em;
 }
 
-#racepie rect {
-	fill: #E9E9E9;
-}
 
 #racepie {
 	margin-bottom: 0.5em;
-}
-
-#attendancebar .highcharts-button rect {
-	fill: #E9E9E9;
 }
 
 
@@ -321,14 +326,15 @@ body {
 	margin-top: 1em;
 }
 
-#knowledgebar .highcharts-button rect {
-	fill: #F0A350;
+
+@mixin white-text {
+	color: #ffffff;
+	font-family: 'Francois One', sans-serif;
+	font-size: 18px;
 }
 
 .circle-description {
-	color: #ffffff;
-	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-	font-size: 110%;
+	@include white-text;
 	line-height: 100%;
 	margin-top: 2em;
 }
@@ -338,66 +344,76 @@ body {
 	@include numberCircle;
 }
 
-#life-career-skills {
+@mixin life-career-skills {
+
 	margin-top: 1em;
 	margin-left: -0.5em;
+
+	hr {
+		width: 80%;
+		margin-left: 0.8em;
+	}
+
+	.stat {
+		color: #ffffff;
+		font-family: 'ColaborateBoldRegular', Arial, sans-serif;
+		font-size: 550%;
+		margin-left: -0.7em;
+	}
+
+	.description {
+		@include white-text;
+		margin-top: 0em;
+	}
+
+	table{
+		background: #F0A350;
+		border: #F0A350;
+	}
+
+	table tr td {
+		padding-top: 3.5em;
+	}
+
+	table tr:nth-of-type(even) {
+		background: #F0A350;
+	}
 }
 
-#life-career-skills hr {
-	width: 80%;
-	margin-left: 0.8em;
-}
 
-#life-career-skills .stat {
-	color: #ffffff;
-	font-family: 'ColaborateBoldRegular', Arial, sans-serif;
-	font-size: 550%;
-	margin-left: -0.7em;
-}
-
-#life-career-skills .description {
-	color: #ffffff;
-	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-	font-size: 120%;
-	margin-top: 0em;
-}
-
-#life-career-skills table{
-	background: #F0A350;
-	border: #F0A350;
-}
-
-#life-career-skills table tr td {
-	padding-top: 3.5em;
+#life-career-skills {
+	@include life-career-skills;
 }
 
 
-#life-career-skills table tr:nth-of-type(even) {
-	background: #F0A350;
-}
-
-#profile-stats {
+@mixin profile-stats {
+	
 	font-family: 'ColaborateLightRegular', Arial, sans-serif;
 	background-color: #E9E9E9; 
 	border: 0px;
 	margin-top: 1em;
+
+	tr:nth-of-type(even) {
+		background: #E9E9E9;
+	}
+
+	.profile-label {
+		color: #2f7ed8;
+		font-size: 90%;
+	}
+
+	.profile-details {
+		color: #153a54;
+		font-size: 120%;
+	}
 }
 
-#profile-stats tr:nth-of-type(even) {
-	background: #E9E9E9;
-}
-
-#profile-stats .profile-label {
-	color: #2f7ed8;
-	font-size: 90%;
-}
-
-#profile-stats .profile-details {
-	color: #153a54;
-	font-size: 120%;
+#profile-stats {
+	@include profile-stats;
 }
 
 #student-attendance-percent {
+	font-weight: bold;
 	font-family: 'Francois One', sans-serif;
 	font-size: 300%;
 	color: #153a54;
@@ -410,92 +426,67 @@ body {
 	margin-bottom: 2.5em;
 }
 
-#quicklinks a {
-	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-	font-size: 120%;
-	color: #2f7ed8;
-	margin-left: 0.3em;
-}
-
 
 #quicklinks {
 	@include quicklinks;
 }
 
-
-.highcharts-contextmenu {
-    bottom: auto !important;
-    top: 5px;
-}
-
-#knowledgeModal table {
-	margin-top: 2em;
-	width: 100%;
-}
-
-#knowledgeModal ul {
-	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-	font-size: 110%;
-}
-
-#knowledgeModal li {
-	padding-top: 1em;
-}
-
-#knowledgeModal table {
-	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
-	font-size: 130%;
-}
-
-#knowledgeModal th {
-	font-size: 90%;
-}
-
-.percent-change-positive {
-	color: #41AD49;
-}
-
-.percent-change-negative {
-	color: #DC143C;
+#knowledgeModal {
+	@include main-header-group;
+	@include table;
+	@include list;
 }
 
 #flyfishingModal {
+	@include main-header-group;
 	@include flyFishingModal;
+	@include table;
 } 
 
 
 #scienceModal {
-	@include modal;
+	@include main-header-group;
+	@include list;
+	@include table;
 }
 
 #engineeringModal {
-	@include modal;
+	@include main-header-group;
+	@include list;
+	@include table;
 }
 
 #techModal {
-	@include modal;
+	@include main-header-group;
+	@include list;
+	@include table;
 }
 
 
 #mathModal {
-	@include modal;
+	@include main-header-group;
+	@include list;
+	@include table;
 }
 
 #attendanceModal {
-	@include modal;
+	@include main-header-group;
+	@include list;
+	@include table;
 }
 
 
 #life-career-skills .avg-hours {
-	color: #ffffff;
-	font-family: 'Francois One', sans-serif;
+	@include white-text;
 	margin-top: 0.3em;
 	margin-bottom: 0.3em;
 }
 
 #lifeCareerModal {
+	@include main-header-group;
 	@include numberCircleLife;
-	@include modal;
+	@include list;
+	@include table;
 	@include lifeCareerModal;
 }
 
