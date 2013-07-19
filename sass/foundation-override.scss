@@ -392,7 +392,7 @@ body {
 
 @mixin profile-stats {
 	
-	font-family: 'ColaborateLightRegular', Arial, sans-serif;
+	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
 	background-color: #E9E9E9; 
 	border: 0px;
 	margin-top: 1em;
@@ -403,12 +403,12 @@ body {
 
 	.profile-label {
 		color: #2f7ed8;
-		font-size: 90%;
+		font-size: 14px;
 	}
 
 	.profile-details {
 		color: #153a54;
-		font-size: 120%;
+		font-size: 18px;
 	}
 }
 

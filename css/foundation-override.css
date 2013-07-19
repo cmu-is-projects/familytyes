@@ -277,7 +277,7 @@ body {
 
 /* line 415, ../sass/foundation-override.scss */
 #profile-stats {
-  font-family: 'ColaborateLightRegular', Arial, sans-serif;
+  font-family: 'ColaborateMediumRegular', Arial, sans-serif;
   background-color: #E9E9E9;
   border: 0px;
   margin-top: 1em;
@@ -289,12 +289,12 @@ body {
 /* line 404, ../sass/foundation-override.scss */
 #profile-stats .profile-label {
   color: #2f7ed8;
-  font-size: 90%;
+  font-size: 14px;
 }
 /* line 409, ../sass/foundation-override.scss */
 #profile-stats .profile-details {
   color: #153a54;
-  font-size: 120%;
+  font-size: 18px;
 }
 
 /* line 419, ../sass/foundation-override.scss */
