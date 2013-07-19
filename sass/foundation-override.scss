@@ -89,6 +89,11 @@ body {
 		margin-top: 0.3em;
 	}
 
+	.more-info a:hover {
+		font-size: 60%;		
+		font-weight: bold;
+	}
+
 }
 
 @mixin quicklinks{
