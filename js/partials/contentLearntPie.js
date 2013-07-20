@@ -45,4 +45,4 @@ var knowledge = 89,
         fishing = 110;
 
 resizeContentPie('#knowledge_pie', knowledge);
-    resizeContentPie('#fishing_pie', fishing);
+resizeContentPie('#fishing_pie', fishing);

@@ -107,11 +107,10 @@ body {
 	}
 
 	a {
-		font-family: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
+		font: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
 		color: #153a54;
 		margin-left: 0.3em;
 	}
-
 
 } 
 
@@ -425,7 +424,7 @@ body {
 }
 
 #student-attendance-caption {
-	font-family: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
+	font: 18px/27px 'ColaborateMediumRegular', Arial, sans-serif;
 	color: #153a54;
 	margin-bottom: 2.5em;
 }
